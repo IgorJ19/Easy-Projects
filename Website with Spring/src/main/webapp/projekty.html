@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekty</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class = "stopka">
+    <img type="image" src="images/naglowek_ikona.jpg" id = "ikona"
+         style= "margin-top: 6px; margin-left: 5.5%; margin-right: 2%; width: 150px; height: 140px;"
+         onclick="location.href='http://localhost:8080';">
+    <h1 class="tekst_stopki">Igor Jurkiewicz <br> jurkiewiczigor19@gmail.com</h1>
+    <button id="projekty" style="height: 34px; width: 98px; margin-left: 55%"
+            class="przycisk" onclick="location.href='http://localhost:8080/projekty-eng';">English</button>
+</div>
+
+<ol id = "menu" class = "menu">
+    <li><a href="http://localhost:8080">Home</a>
+    <li><a href="http://localhost:8080/dane/pobierz">Baza Danych</a>
+    <li><a href="http://localhost:8080/konsola">Konsola</a>
+    <li><a href="http://localhost:8080/Cv">Cv</a>
+    <li><a href="#">Moje projekty</a>
+</ol>
+
+<main style="width: 100%; margin: 0 auto">
+
+    <div class = "przerwa">
+        <img type="image" src="images/stopka_czarny.jpg"
+             style= "width: 100%; height: 20px; margin-bottom: -5px; margin-top: -15px;" >
+    </div>
+
+        <div class = "zdjecie">
+        <img type="image" src="images/milionerzy_zdj.png"
+             style= "width: 50%; height: 50%; margin-top: -10px; " >
+        <h1 clas = "nieruchomy_tekst" type = "text" class = "opis" style = "margin-left: 40px"> Aplikacja milionerzy napisana w środowisku NetBeans, która oparta jest na
+            bibliotece Swing. Pytania są losowane z czterech dostępnych dla każdego etapu, zapis postępów
+            prowadzony jest poprzez obiekty odpowiednio utworzonej klasy. Rekordowe wyniki zapisywane są do pliku ".txt" <br>
+
+            <a type="button" class="btn btn-success" href = "DoPobrania/Milionerzy.jar" style = "margin-top: 10px; margin-left: 0px;" >Pobierz plik jar</a>
+
+            <a type="button" class="btn btn-success" href = "DoPobrania/milionerzy.zip" style = "margin-top: 10px; margin-left: 5px;">Pobierz pliki aplikacji</a>
+
+        </h1>
+    </div>
+
+    <div class = "zdjecie">
+
+        <h1 type = "text" class = "opis" style = "margin-left: 40px"> Program bezokienkowy ListaList to projekt w którym starałem się
+            efektywnie wykorzystać struktury języka Java oraz jego obiektowy charakter, każdy dzień to ciąg losowo generowanych
+            wydarzeń. Całość oparta jest na opóźnieniu wątków dzięki czemu program wykorzystuje upływ czasu <br>
+
+            <a type="button" class="btn btn-success" href = "DoPobrania/ListaList.zip" style = "margin-top: 10px; margin-left: 0px;">Pobierz plik jar</a>
+        </h1>
+
+        <img type="image" src="images/ListaList.png"
+             style= "width: 100%; width: 755px; height: 498px; margin-top: -10px; margin-right: 40px" >
+    </div>
+
+    <div class = "przerwa">
+        <img type="image" src="images/stopka_czarny.jpg"
+             style= "width: 100%; height: 20px; margin-bottom: -5px; margin-top: -15px;" >
+    </div>
+
+    <div class = "zdjecie_opisu_strony" style = "text-align: left;">
+
+        <h1 type = "text" class = "opis_strony" style = "margin-left: 40px"> Ostatnim i najważniejszym dla mnie projektem jest strona na której
+            obecnie się Państwo znajdujecie. Została ona utworzona od podstaw przeze mnie zarówno we Front-Endzie jak i w Back-Endzie. Odnośniki do podstron
+            oraz baza danych "wiszą" na endpointach Springa i klasach Javy. Front-end jest wykonany w JavaScript,
+            HTML, CSS a strona pisana była w środowisku inteliJ z wykorzystaniem Maven<br>
+            <a type="button" class="btn btn-success" href = "DoPobrania/Archiwalna.zip" style = "margin-top: 10px; margin-left: 5px;">Pobierz pliki kontrolerów <br> strony</a>
+           </h1>
+
+    </div>
+
+    <div class = "przerwa">
+        <img type="image" src="images/stopka_czarny.jpg"
+             style= "width: 100%; height: 20px" >
+    </div>
+
+
+
+</main>
+<style>
+    .przycisk{
+   color: white;
+   background-color: purple;
+   }
+
+    @media screen and (min-width: 1100px) {
+  .menu{
+      font-size: 15px;
+  }
+  }
+
+  @media screen and (max-width: 1099px) {
+  .menu {
+      font-size: 10px;
+  }
+  }
+
+  .stopka {
+ background-image: url('images/stopka_czarny.jpg');
+ height: 100px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+.stopka > p {
+  color: white;
+  padding: 10px;
+}
+ .tekst_stopki{
+   font-size: 15px;
+   font-weight: lighter;
+   letter-spacing: 1px;
+   line-height: 1.2;
+   font-style: Garamond;
+   color: white;
+   }
+
+.zdjecie {
+  background-image: url('images/tlo_projekty.jpg');
+  margin-top: -10px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ .opis{
+font-size: 20px;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 1.2;
+font-style: Garamond;
+color: white;
+}
+  @media screen and (max-width: 1099px) {
+  .opis {
+      font-size: 10px;
+  }
+  }
+ .zdjecie_opisu_strony {
+  background-image: url('images/tlo_opisu_str.jpg');
+  margin-top: -10px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.opis_strony{
+font-size: 27px;
+font-weight: normal;
+margin-right: 35px;
+letter-spacing: 1px;
+line-height: 1.2;
+font-style: Garamond;
+color: white;
+background-color: black;
+}
+@media screen and (max-width: 1099px) {
+  .opis_strony {
+      font-size: 15px;
+  }
+  }
+
+
+.dolna_stopka > p {
+  color: white;
+  padding: 10px;
+}
+
+
+
+
+/* ------------------------ POZIOME MENU CSS ------------------------ */
+/* wygląd elementu - ol */
+#menu {
+  width: 100%;
+  margin:0 auto;
+  padding:0;
+  list-style-type:none;
+  background-color:#FDF;
+  background-image: url('images/kosmos_tlo1.jpg')
+}
+
+/* naprawa wysokości elementu - ol */
+/* #menu:after {
+  content:'';
+  display:block;
+  clear: both;
+  width: 1%;
+} */
+
+/* wygląd elementów - li */
+#menu > li {
+  float:left;
+}
+
+/* pierwszy element - li - elementu o identyfikatorze menu */
+#menu > li:first-child {
+  background-color:red;
+  width: 20%;
+}
+
+/* drugi element - li - elementu o identyfikatorze menu */
+#menu > li:first-child + li {
+  background-color:green;
+  width: 20%;
+}
+
+/* trzeci element - li - elementu o identyfikatorze menu */
+#menu > li:first-child + li + li {
+  background-color:blue;
+  width: 20%;
+}
+ #menu > li:first-child + li + li + li {
+  background-color:blue;
+  width: 20%;
+}
+ #menu > li:first-child + li + li + li + li {
+  background-color:blue;
+  width: 20%;
+}
+
+
+/* wygląd elementów - a */
+#menu > li > a {
+  display:block;
+  padding:15px;
+  text-decoration:underline overline #a020f0;
+  text-align:center;
+  color: #ffffff;
+  background-color:#DDD;
+  box-shadow:0 0 0 0.3px #FFF inset;
+  background-image: url("images/kosmos_tlo1.jpg");
+}
+
+/* wygląd elementów - a - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > a {
+  color:#0000FF;
+  background-color:#0000FF;
+  background-image: url('images/dzien_tlo1.png');
+}
+
+/* -------------------- ROZWIJANA CZĘŚĆ MENU CSS -------------------- */
+/* wygląd elementów - li - rodzica każdej części rozwijanej menu CSS */
+#menu > li  {
+  position:relative;
+}
+
+/* wygląd elementów - ul */
+#menu > li > ul {
+  width:100%;
+  display:none;
+  position:absolute;
+  z-index:1;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  background-color:#FFF;
+}
+
+/* wygląd elementów - ul - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > ul {
+  display:block;
+}
+
+/* wygląd elementów - li */
+#menu > li > ul > li {
+  box-shadow:0 -4px 4px -4px #AAA;
+}
+
+/* wygląd pierwszego dziecka elementu typu - li */
+#menu > li > ul > li:first-child {
+  box-shadow:none;
+}
+
+/* wygląd ostatniego dziecka elementu typu - li */
+#menu > li > ul > li:last-child {
+  box-shadow:0 -4px 4px -4px #AAA, 0 4px 4px -4px #AAA;
+}
+
+/* wygląd elementów - a */
+#menu > li > ul > li > a {
+  display:block;
+  text-decoration:none;
+  padding:15px;
+  color:#000;
+}
+
+/* wygląd elementów - a - po najechaniu kursorem myszki na element - li */
+#menu > li > ul > li:hover > a {
+  color:#00F;
+  background-color:#F0F0F0;
+  background-image:linear-gradient(#FFF, #EEE, #FFF);
+</style>
+
+<script>
+
+</script>
+</body>
+</html>

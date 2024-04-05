@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled : true
+      path: /konsola
+
+
+  datasource:
+      url: jdbc:h2:file:./cv-db
+      username: Admin
+      password: 1234567
+  jpa:
+    hibernate:
+      ddl-auto: update
